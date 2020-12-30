@@ -1,6 +1,5 @@
-﻿
-@[toc]
 
+@[toc]
 
 -----
 
@@ -10,11 +9,16 @@
 
 那么为什么要有`Servlet`呢？请看下图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201230155819683.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlc2lsZXFpbg==,size_16,color_FFFFFF,t_7)
+
+
+![](Servlet%20%E7%AE%80%E4%BB%8B.png)
+
+
+
+
 浏览器向服务器请求动态资源，动态资源中一定要有一个`Java类`响应他，而这个类没有`main`方法无法自主执行。也就是说这个类依赖于`Tomcat`执行，所以这个类就要有一定的`规范`才能被`Tomcat`识别，而这个规范就是`Servlet`。
 
 综上所述，**`Servlet`是一个规范，也就是说是一个接口，这个接口定义了这个Java类被Tomcat识别的规则，实现`Servlet`只需要实现接口复写方法即可**。
-
 
 ---
 # 2、Servlet 实现步骤
@@ -156,7 +160,17 @@ public class ServletDemo1 implements Servlet {
 
 # 3、Servlet 执行原理
 `Servlet`执行原理请看下图：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201230174601212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlc2lsZXFpbg==,size_16,color_FFFFFF,t_70)
+
+
+
+![](Servlet%20%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86.png)
+
+
+
+
+
+
+
 以下是对上图的每个步骤进行解释：
 
 - `①` ：浏览器发送请求，`web.xml`的`url-pattern`响应
