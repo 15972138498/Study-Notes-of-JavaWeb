@@ -1,4 +1,4 @@
-package com.wzq.dataSource.utils;
+package com.wzq.utils;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 
