@@ -22,7 +22,7 @@ public class DelUserServlet extends HttpServlet {
         service.delete(id);
 
         //页面重定向到list.jsp
-        response.sendRedirect(request.getContextPath()+"/userListServlet");
+        response.sendRedirect(request.getContextPath()+"/findUserByPageServlet");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

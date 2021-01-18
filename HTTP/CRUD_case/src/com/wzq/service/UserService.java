@@ -1,8 +1,10 @@
 package com.wzq.service;
 
+import com.wzq.domain.PageBean;
 import com.wzq.domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 /*
  * 用户管理的业务接口
@@ -21,4 +23,8 @@ public interface UserService {
     User findById(String id);
 
     void update(User user);
+
+    void delSelectedUser(String[] ids);
+
+    PageBean<User> findUserByPage(String currentPage, String rows, Map<String, String[]> condition);
 }

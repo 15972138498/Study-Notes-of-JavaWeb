@@ -36,7 +36,7 @@ public class AddUserServlet extends HttpServlet {
         service.add(user);
 
         //页面重定向到UserListServlet
-        response.sendRedirect(request.getContextPath()+"/userListServlet");
+        response.sendRedirect(request.getContextPath()+"/findUserByPageServlet");
 
     }
 
