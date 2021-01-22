@@ -1,0 +1,9 @@
+[DEBUG][21-01-22][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-01-22][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-01-22][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-01-22][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-01-22][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-01-22][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[INFO][21-01-22][com.wzq.mapperTest.UserMapperTest]info：进入log4jTest了...
+[DEBUG][21-01-22][com.wzq.mapperTest.UserMapperTest]debug：进入log4jTest了...
+[ERROR][21-01-22][com.wzq.mapperTest.UserMapperTest]error：进入log4jTest了...
