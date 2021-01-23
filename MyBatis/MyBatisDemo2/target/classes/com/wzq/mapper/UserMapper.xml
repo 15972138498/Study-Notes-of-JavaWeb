@@ -12,4 +12,11 @@
         select * from mybatis_db.user where id = #{id};
     </select>
 
+    <select id="findUserByLimit" resultType="User" parameterType="map">
+        select * from mybatis_db.user limit #{startPage},#{Page};
+    </select>
+
+    <select id="findUserByRowBounds" resultType="User">
+        select * from mybatis_db.user;
+    </select>
 </mapper>
