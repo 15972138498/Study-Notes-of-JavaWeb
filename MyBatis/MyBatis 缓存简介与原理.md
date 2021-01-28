@@ -1,6 +1,11 @@
 ﻿@[toc]
 
 ----
+
+> [MyBatis 缓存及原理](https://blog.csdn.net/lesileqin/article/details/113348677)
+> [MyBatis 一级缓存](https://blog.csdn.net/lesileqin/article/details/113352616)
+> [MyBatis 二级缓存](https://blog.csdn.net/lesileqin/article/details/113356160)
+
 # 一、缓存简介
 **什么是缓存？**
 
