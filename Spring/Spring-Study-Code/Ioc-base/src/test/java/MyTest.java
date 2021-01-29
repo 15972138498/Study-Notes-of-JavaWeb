@@ -1,14 +1,15 @@
-import com.wzq.dao.UserDaoMySqlImpl;
-import com.wzq.service.UserService;
+
 import com.wzq.service.UserServiceImpl;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyTest {
 
     @Test
     public void Test(){
-        UserService service = new UserServiceImpl();
-        ((UserServiceImpl) service).setUserDao(new UserDaoMySqlImpl());
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        UserServiceImpl service = (UserServiceImpl) context.getBean("userServiceImpl");
         service.getUser();
     }
 
