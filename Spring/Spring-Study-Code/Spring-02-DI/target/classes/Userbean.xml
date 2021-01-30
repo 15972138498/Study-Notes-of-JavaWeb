@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 第一种方式：数组下标
+    <bean id="user" class="com.wzq.pojo.User">
+
+        <constructor-arg index="0" value="wzq"/>
+        <constructor-arg index="1" value="18"/>
+    </bean>
+        -->
+
+    <!-- 第二种：通过类型创建，不建议使用
+    <bean id="user" class="com.wzq.pojo.User">
+        <constructor-arg type="java.lang.String" value="wzq" />
+        <constructor-arg type="java.lang.Integer" value="18" />
+    </bean>
+     -->
+    <!-- 第三种：直接通过参数名来设置 -->
+    <bean id="user" class="com.wzq.pojo.User">
+        <constructor-arg name="name" value="wzq"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+</beans>
