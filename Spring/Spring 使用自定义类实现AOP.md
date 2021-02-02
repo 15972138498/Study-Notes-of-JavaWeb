@@ -1,6 +1,11 @@
 ﻿@[toc]
 
 ----
+> 友情链接：
+> [AOP是什么？](https://blog.csdn.net/lesileqin/article/details/113547039)
+> [使用原生API接口实现AOP](https://blog.csdn.net/lesileqin/article/details/113554022)
+> [使用自定义类实现AOP](https://blog.csdn.net/lesileqin/article/details/113555666)
+> [使用注解实现AOP](https://blog.csdn.net/lesileqin/article/details/113557912)
 
 # 一、搭建环境
 模拟`service`层，首先创建个`UserService`接口：

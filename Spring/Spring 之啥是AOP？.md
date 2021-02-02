@@ -1,6 +1,11 @@
 ﻿@[toc]
 
 ---
+> 友情链接：
+> [AOP是什么？](https://blog.csdn.net/lesileqin/article/details/113547039)
+> [使用原生API接口实现AOP](https://blog.csdn.net/lesileqin/article/details/113554022)
+> [使用自定义类实现AOP](https://blog.csdn.net/lesileqin/article/details/113555666)
+> [使用注解实现AOP](https://blog.csdn.net/lesileqin/article/details/113557912)
 # 一、AOP 简介
 `AOP`全称（`Aspect Oriented Programming`）意味：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护技术。
 
