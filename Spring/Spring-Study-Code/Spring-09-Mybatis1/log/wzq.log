@@ -1,0 +1,34 @@
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e800aaa] was not registered for synchronization because synchronization is not active
+[DEBUG][21-02-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@609bcfb6] will not be managed by Spring
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]==>  Preparing: select * from user;
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]==> Parameters: 
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]<==      Total: 4
+[DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e800aaa]
+[DEBUG][21-02-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e800aaa] was not registered for synchronization because synchronization is not active
+[DEBUG][21-02-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@609bcfb6] will not be managed by Spring
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]==>  Preparing: select * from user;
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]==> Parameters: 
+[DEBUG][21-02-02][com.wzq.dao.UserMapper.showAllUser]<==      Total: 4
+  [DEBUG][21-02-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e800aaa]
+[DEBUG][21-02-03][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-02-03][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-02-03][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@702657cc] was not registered for synchronization because synchronization is not active
+[DEBUG][21-02-03][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@74f6c5d8] will not be managed by Spring
+[DEBUG][21-02-03][com.wzq.dao.UserMapper.showAllUser]==>  Preparing: select * from user;
+[DEBUG][21-02-03][com.wzq.dao.UserMapper.showAllUser]==> Parameters: 
+[DEBUG][21-02-03][com.wzq.dao.UserMapper.showAllUser]<==      Total: 4
+[DEBUG][21-02-03][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@702657cc]

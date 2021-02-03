@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- DataSource : ʹ��Spring������Դ����MyBatis ������
+        ����ʹ��Spring�ṩ��JDBC��
+    -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis_db?serverTimezone=GMT"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <!-- sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- ��MyBatis�����ļ� -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="mapperLocations" value="classpath:com/wzq/dao/*.xml"/>
+    </bean>
+
+
+    <!-- SqlSessionTemplate ��������ʹ�õ�SqlSession
+        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"> -->
+            <!-- ֻ��ʹ�ù�����ע��SqlSessionFactory����Ϊû��set����
+            <constructor-arg index="0" ref="sqlSessionFactory"/>
+        </bean>
+    -->
+</beans>
