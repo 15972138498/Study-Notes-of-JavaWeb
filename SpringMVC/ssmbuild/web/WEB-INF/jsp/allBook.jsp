@@ -34,6 +34,15 @@
         </div>
     </div>
 
+    <div class="col-md-4 column"></div>
+    <div class="col-md-4 column">
+        <!-- 查询书籍 -->
+        <form action="${pageContext.request.contextPath}/book/queryBookByName" method="post" style="float: right">
+            <input type="text" name="name" class="form-control" placeholder="请输入要查询的书籍名称">
+            <input type="submit" value="查询" class="btn btn-primary">
+        </form>
+    </div>
+
     <div class="row clearfix">
         <div class="col-md-12 column">
             <table class="table table-hover table-striped">
@@ -43,6 +52,7 @@
                     <th>书籍名字</th>
                     <th>书籍数量</th>
                     <th>书籍详情</th>
+                    <th>操作</th>
                 </tr>
                 </thead>
                 <!-- 书籍从数据库中查询出来，从list里面遍历出来：foreach -->
@@ -53,6 +63,10 @@
                             <td>${book.bookName}</td>
                             <td>${book.bookCounts}</td>
                             <td>${book.detail}</td>
+                            <td>
+                                <a href="${pageContext.request.contextPath}/book/toUpdateBook?id=${book.bookID}">修改</a> &nbsp; | &nbsp;
+                                <a href="${pageContext.request.contextPath}/book/deleteBook?id=${book.bookID}">删除</a>
+                            </td>
                         </tr>
                     </c:forEach>
                 </tbody>

@@ -23,16 +23,22 @@
             bookName=#{bookName},
             bookCounts=#{bookCounts},
             detail = #{detail}
-        where ;
+        where
+            bookID = #{bookID};
     </update>
 
     <!-- 查询一本书 -->
     <select id="queryBookById" resultType="books">
-        select * from ssmbuild.books where id = #{id}
+        select * from ssmbuild.books where bookID = #{id}
     </select>
 
     <!-- 查询所有书 -->
     <select id="queryAllBook" resultType="books">
         select * from ssmbuild.books
+    </select>
+
+    <!-- 通过名称查询书 -->
+    <select id="queryBookByName" resultType="books">
+        select * from ssmbuild.books where bookName like #{name}
     </select>
 </mapper>
