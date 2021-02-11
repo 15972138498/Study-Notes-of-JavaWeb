@@ -1,0 +1,24 @@
+# #代表注释
+person:
+  #普通类型，可以直接赋值，注意冒号之后有个空格！
+  name: wzq
+  age: 21
+  happy: false
+  birth: 2021/2/11
+  maps:
+    k1: v1
+    k2: v2
+  #这里可以写为一行：
+  #maps: {k1: v1,k2: v2}
+
+  #数组这样写：
+  lists:
+    - code
+    - music
+    - girl
+  #数组写为一行：
+  #lists: [code,music,girl]
+  #对象这样写：
+  dog:
+    name: 小黑
+    age: 3
