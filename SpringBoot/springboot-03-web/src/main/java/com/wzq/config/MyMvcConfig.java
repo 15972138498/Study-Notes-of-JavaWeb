@@ -25,9 +25,10 @@ public class MyMvcConfig implements WebMvcConfigurer {
         /*
         * addPathPatterns：拦截的请求
         * excludePathPatterns：排除哪些请求
-        * 静态资源：*.css  *.js，SpringBoot已经做好了静态资源映射，这里不用排除
-        * */
-        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/*")
-                .excludePathPatterns("/","/index.html","/user/login");
+        * 如果是/*： 静态资源：*.css  *.js，SpringBoot已经做好了静态资源映射，这里不用排除,!!!，只过滤下一级目录
+        * 如果是/** ：需要排除，过滤所有目录
+         */
+        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
+                .excludePathPatterns("/","/index.html","/user/login","/asserts/css/**","/asserts/js/**","/asserts/img/**");
     }
 }
